@@ -1,23 +1,61 @@
-# PEGI Game Ratings Dataset (2018-02-04)
+# PEGI Game Ratings Dataset 
+
+## 1999 to 2018-02-04
 
 Dataset contains `28,757` rows of [PEGI](http://www.pegi.info/) game ratings from  from 1999 to February 04, 2018.
 
-Data includes:
-* Game title
-* Age rating
-* Release date
-* Publisher name
-* URL of the game publisher
-* Game contents (violence/bad language etc.)
-* Platform
-* Genre
+Example data:
 
-![](viz/number_of_ratings_by_year.png)
+```json
+[
+    {
+        "Release-date": "2018-02-02",
+        "Rating": "18",
+        "Title": "Mafia III The Complete Edition",
+        "URL": null,
+        "Company": "Take2 Interactive Software Europe ltd",
+        "Contains": [
+            "Game contains bad language",
+            "Game refers to or depicts the use of drugs",
+            "Game depicts nudity and/or sexual behaviour or sexual references",
+            "Game contains depictions of violence"
+        ],
+        "Platform": "PC",
+        "Genre": "Action"
+    }
+]   
+```
 
-![](viz/breakdown_by_platform.png)
+## 1999 to 2019-01-12
 
-![](viz/breakdown_by_genre.png)
+Dataset contains `30,183` rows.
 
-![](viz/game_rating_contents.png)
+Update: Website has recently updates, and game genre has now been removed from the website listings.
 
-![](viz/game_rating_contents_by_genre.png)
+Example data:
+
+```json
+[
+    {
+        "Title": "Borderlands 2 VR",
+        "Title Description": "Borderlands 2 VR is a port of the much-acclaimed first-person shooter Borderlands 2 into a single-player VR experience. Players will fight off bandits in immersive gunfights with real-world aiming, punch...",
+        "Descriptor Image URL": [
+            "https://pegi.info/themes/pegi/public-images/violence.png",
+            "https://pegi.info/themes/pegi/public-images/bad_language.png"
+        ],
+        "Rating": 18,
+        "Rating Image URL": "https://pegi.info/themes/pegi/public-images/pegi/pegi18.png",
+        "Platform": [
+            "PlayStation 4"
+        ],
+        "Release Date": "2018-12-14 00:00:00",
+        "Publisher": "Take2 Interactive Software Europe ltd",
+        "Publisher URL": null,
+        "Consumer Advice": "This game is rated PEGI 18 which restricts availability to ADULTS ONLY and is not suitable for anyone below this age. This rating has been given due to gross violence towards human characters and the use of sexual expletives.",
+        "Descriptor": [
+            "Bad language",
+            "Violence"
+        ]
+    }
+]
+```
