@@ -30,7 +30,7 @@ Example data:
 
 Dataset contains `30,183` rows.
 
-Update: Website has recently updates, and game genre has now been removed from the website listings.
+Update: Website recently changed. `Genre` has been removed from the website listings.
 
 Example data:
 
